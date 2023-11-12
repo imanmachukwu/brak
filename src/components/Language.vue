@@ -46,11 +46,13 @@ export default defineComponent({
 
 @media only screen and (max-width: 695px) {
   .language-div {
-    padding: 2.87rem 2.63rem 1rem;
+    padding: 2.87rem 0px 1rem;
+    border: none;
     .language-list {
-      gap: 1.88rem;
+      gap: 0rem;
       border-bottom: none;
       width: 100%;
+      justify-content: space-between;
       .languages {
         font-size: 0.875rem;
       }

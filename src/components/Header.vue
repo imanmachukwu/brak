@@ -91,8 +91,8 @@ export default defineComponent({
       </div>
     </div>
     <div class="header-mobile">
-      <img src="" alt="Search icon" />
-      <img src="" alt="Menu icon" />
+      <img src="../assets/icons/search-icon.svg" alt="Search icon" />
+      <img src="../assets/icons/menu-icon.svg" alt="Menu icon" />
     </div>
   </div>
 </template>
@@ -219,32 +219,10 @@ export default defineComponent({
   .header {
     background: #fff;
     padding: 3rem 0px 1.38rem;
-    .header-logo {
-      .logo {
-        .first-child {
-          width: 0.81738rem;
-          height: 1.11663rem;
-          flex-shrink: 0;
-        }
-        .second-child {
-          width: 0.87475rem;
-          height: 1.10119rem;
-          flex-shrink: 0;
-        }
-        .logo-text {
-          font-size: 1.5rem;
-        }
-      }
-    }
-    .header-menu {
-      display: none;
-    }
-    .header-buttons {
-      display: none;
-    }
-    .header-mobile {
-      display: flex;
-      gap: 1.5rem;
+    margin: 0px -1.5rem;
+    .header-menu-div {
+      gap: 0px;
+      justify-content: space-between;
     }
   }
 }
