@@ -219,7 +219,8 @@ export default defineComponent({
   .header {
     background: #fff;
     padding: 3rem 0px 1.38rem;
-    margin: 0px -1.5rem;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
     .header-menu-div {
       gap: 0px;
       justify-content: space-between;

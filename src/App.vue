@@ -43,6 +43,7 @@ body {
   height: 100vh;
   padding: 0px 7.5rem;
   background: #fafafa;
+  overflow-x: hidden;
 }
 
 nav {
