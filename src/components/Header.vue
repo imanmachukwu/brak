@@ -146,7 +146,7 @@ export default defineComponent({
         }
         .menu-list-item {
           color: rgba(0, 0, 0, 0.7);
-          font-family: Space Grotesk;
+          font-family: "Space Grotesk", sans-serif;
           font-size: 0.875rem;
           font-style: normal;
           font-weight: 400;
