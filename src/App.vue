@@ -3,6 +3,22 @@ import { defineComponent } from "vue";
 import AppHeader from "@/components/Header.vue";
 import AppFooter from "@/components/Footer.vue";
 import AppLanguage from "@/components/Language.vue";
+import Lenis from "@studio-freight/lenis";
+
+const lenis = new Lenis({
+  duration: 1.5,
+});
+
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
 
 export default defineComponent({
   name: "App",
@@ -57,6 +73,26 @@ nav {
       color: #42b983;
     }
   }
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 695px) {
