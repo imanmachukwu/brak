@@ -108,6 +108,62 @@
         <img src="../assets/images/etherum-2.png" alt="" class="eth-icon" />
       </div>
     </div>
+    <div id="featured">
+      <h1 id="featured-title">Featured NFTs</h1>
+      <p id="featured-description">
+        This digital art has the highest rating and it will be displayed <br />
+        on all our social media for auctions.
+      </p>
+      <FeaturedNFTs />
+    </div>
+    <div id="create-and-sell">
+      <h1 id="create-and-sell-title">Create and Sell NFT</h1>
+      <p id="create-and-sell-description">
+        Feel free to add, list, set up your digital art in a collection to
+        <br />
+        provide a better layout.
+      </p>
+      <div id="create-and-sell-cards-container">
+        <div class="create-card">
+          <img src="../assets/icons/plus.svg" alt="" class="create-card-svg" />
+          <p class="create-card-title">Add NFTs</p>
+          <p class="create-card-text">
+            Add your <span>digital art, images, audios and videos</span> that
+            will be uploaded on our website for auction.
+          </p>
+        </div>
+        <div class="create-card">
+          <img src="../assets/icons/list.svg" alt="" class="create-card-svg" />
+          <p class="create-card-title">List for Sale</p>
+          <p class="create-card-text">
+            <span>Create a list</span> containing all the NFT (digital art) you
+            have made and generate your link.
+          </p>
+        </div>
+        <div class="create-card">
+          <img
+            src="../assets/icons/wallet.svg"
+            alt=""
+            class="create-card-svg"
+          />
+          <p class="create-card-title">Set up Wallet</p>
+          <p class="create-card-text">
+            Set up a wallet to save all your <span>ethereum and coins</span> to
+            make a sale of your NFT.
+          </p>
+        </div>
+        <div class="create-card">
+          <img src="../assets/icons/apps.svg" alt="" class="create-card-svg" />
+          <p class="create-card-title">Create Collections</p>
+          <p class="create-card-text">
+            Create a collection of all your works associated to that field.
+          </p>
+        </div>
+        <div class="ellipse1"></div>
+        <div class="ellipse2"></div>
+        <div class="ellipse3"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -369,6 +425,7 @@
       rgba(255, 255, 255, 0.5) 99.92%
     );
     padding: 3.38rem;
+    margin-bottom: 13.87rem;
     #ellipse-4 {
       position: absolute;
       top: -7.31rem;
@@ -464,17 +521,153 @@
       }
     }
   }
+  #featured {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.44rem;
+    text-align: left;
+    #featured-title {
+      color: #000;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    #featured-description {
+      color: rgba(0, 0, 0, 0.5);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  #create-and-sell {
+    margin-top: 9.94rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.44rem;
+    text-align: left;
+    #create-and-sell-title {
+      color: #000;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    #create-and-sell-description {
+      color: rgba(0, 0, 0, 0.5);
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    #create-and-sell-cards-container {
+      margin-top: 3.25rem;
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 1.25rem;
+      position: relative;
+      .create-card {
+        padding: 1.5rem 2.69rem;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 0.31rem;
+        .create-card-svg {
+          margin-bottom: 1.26rem;
+          width: 2.5rem;
+          height: 2.5rem;
+          flex-shrink: 0;
+        }
+        .create-card-svg:nth-child(1) {
+          width: 1.875rem;
+          height: 1.93013rem;
+        }
+        .create-card-svg:nth-child(2) {
+          width: 3rem;
+          height: 3rem;
+        }
+        .create-card-title {
+          color: #000;
+          font-family: "Space Grotesk", sans-serif;
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .create-card-text {
+          //max-width: 14.3125rem;
+          color: rgba(0, 0, 0, 0.5);
+          font-family: "Space Grotesk", sans-serif;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+      .ellipse1 {
+        position: absolute;
+        top: -10.44rem;
+        left: -13.81rem;
+        width: 23.25rem;
+        height: 23.25rem;
+        flex-shrink: 0;
+        border-radius: 23.25rem;
+        background: rgba(255, 248, 235, 0.7);
+        filter: blur(215px);
+        z-index: -1;
+      }
+      .ellipse2 {
+        position: absolute;
+        bottom: -15.25rem;
+        left: -29.7525rem;
+        width: 19.375rem;
+        height: 19.375rem;
+        flex-shrink: 0;
+        border-radius: 19.375rem;
+        background: rgba(163, 191, 80, 0.8);
+        filter: blur(215px);
+        z-index: -1;
+      }
+      .ellipse3 {
+        position: absolute;
+        top: -3.38rem;
+        right: -10.5rem;
+        width: 19.9375rem;
+        height: 19.9375rem;
+        flex-shrink: 0;
+        border-radius: 19.9375rem;
+        background: rgba(194, 36, 45, 0.8);
+        filter: blur(215px);
+        z-index: -1;
+      }
+    }
+  }
 }
 </style>
 
 <script>
 import { defineComponent } from "vue";
 import MarketPlace from "@/components/Marketplace.vue";
+import FeaturedNFTs from "@/components/FeaturedNFTs.vue";
 
 export default defineComponent({
   name: "HomeView",
   components: {
     MarketPlace,
+    FeaturedNFTs,
   },
 });
 </script>

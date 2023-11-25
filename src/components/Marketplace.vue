@@ -41,9 +41,10 @@
   #marketplace-buttons {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 1.87rem;
     button {
-      width: 19rem;
+      width: 100%;
       padding: 1.5rem 1.75rem;
       text-align: left;
       font-family: "Space Grotesk", sans-serif;
