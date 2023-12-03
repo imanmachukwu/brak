@@ -164,6 +164,33 @@
         <div class="ellipse3"></div>
       </div>
     </div>
+    <div id="top-creators">
+      <div id="top-creators-title">Top Creators of the week</div>
+      <div id="top-creators-desc">
+        View the profile of our best creators of the week with mind<br />
+        blowing NFT collection.
+      </div>
+    </div>
+    <div id="learn-and-earn">
+      <div id="ellipse-4"></div>
+      <div id="ellipse-5"></div>
+      <div id="ellipse-6"></div>
+      <div id="learn-and-earn-text">
+        <h1 id="learn-and-earn-title">Learn and Earn free ETH with your NFT</h1>
+        <p id="learn-and-earn-description">
+          Brak NFT marketplace brings together artist, creators and<br />
+          crypto enthusiasts on a single platform to create and explore<br />
+          top NFT’s
+        </p>
+        <button id="learn-and-earn-button">Explore</button>
+      </div>
+      <div id="eth-square">
+        <img src="../assets/images/etherum-2.png" alt="" class="eth-icon" />
+        <img src="../assets/images/etherum-2.png" alt="" class="eth-icon" />
+        <img src="../assets/images/etherum-2.png" alt="" class="eth-icon" />
+        <img src="../assets/images/etherum-2.png" alt="" class="eth-icon" />
+      </div>
+    </div>
   </div>
 </template>
 
